@@ -1,0 +1,27 @@
+Padding(
+                padding: const EdgeInsets.all(13.0),
+                child: Container(
+                  width: ww * 0.9,
+                  height: ww * 0.9,
+                  margin: EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                      color: Colors.indigo,
+                      borderRadius: BorderRadius.circular(9)),
+                  child: Text(
+                    value,
+                    style: TextStyle(fontSize: 35, color: Colors.white),
+                  ),
+                ),
+              ),
+
+                                    
+                    streamQuery
+ I/flutter ( 9062): Instance of '_MapStream<QuerySnapshotPlatform, QuerySnapshot<Map<String, dynamic>>>'
+I/flutter ( 9062): streamSnapshot
+I/flutter ( 9062): AsyncSnapshot<dynamic>(ConnectionState.active, Instance of '_JsonQuerySnapshot', null, null)
+I/flutter ( 9062): querySnapshot
+I/flutter ( 9062): Instance of '_JsonQuerySnapshot'
+I/flutter ( 9062): map
+I/flutter ( 9062): Instance of '_JsonQueryDocumentSnapshot'
+I/flutter ( 9062): mapp
+I/flutter ( 9062): {img: https://i.imgur.com/6EE6EFA.png, tag: {seker: 55, cikolata: 5}, title: Mado çikolatalı Dondurma, barcode: 5050083943652, content: Çikolatalı Maraş Usulü Dondurma}

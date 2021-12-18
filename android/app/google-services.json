@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "294218076576",
+    "project_id": "foodlapp",
+    "storage_bucket": "foodlapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294218076576:android:4da6e2d7a81ee17d4314c5",
+        "android_client_info": {
+          "package_name": "com.example.boz_yap_sifirla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294218076576-2aaalaf2b2u866cgjaj4oh098ncsh1b5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZM41nmTslUkiZAJaufapQc7eSvJbqT5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294218076576-2aaalaf2b2u866cgjaj4oh098ncsh1b5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294218076576:android:a9efa50bb5f0fdef4314c5",
+        "android_client_info": {
+          "package_name": "com.example.kurcalama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294218076576-2aaalaf2b2u866cgjaj4oh098ncsh1b5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZM41nmTslUkiZAJaufapQc7eSvJbqT5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294218076576-2aaalaf2b2u866cgjaj4oh098ncsh1b5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
