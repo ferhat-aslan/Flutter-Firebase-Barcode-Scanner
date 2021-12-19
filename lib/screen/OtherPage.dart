@@ -36,36 +36,38 @@ class _OtherPageState extends State<OtherPage> {
               icon: Icon(Icons.favorite_border_rounded))
         ],
       ),
-      body: Column(
-        children: [
-          Center(
-              child: StreamBuilder(
-                  stream: products.snapshots(),
-                  builder:
-                      (context, AsyncSnapshot<QuerySnapshot> streamSnapshot) {
-                    if (streamSnapshot.hasData) {
-                      // Text(streamSnapshot.data!.docs[0]['şeker'].toString()),
-                      final querySnapshot = streamSnapshot.data;
-                      return Expanded(
-                        child: ListView.builder(
-                            shrinkWrap: true,
-                            physics: BouncingScrollPhysics(),
-                            itemCount: querySnapshot!.size,
-                            itemBuilder: (context, index) {
-                              final map = querySnapshot.docs[index];
-                              final Map<String, dynamic> mapp =
-                                  map.data() as Map<String, dynamic>;
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Center(
+                child: StreamBuilder(
+                    stream: products.snapshots(),
+                    builder:
+                        (context, AsyncSnapshot<QuerySnapshot> streamSnapshot) {
+                      if (streamSnapshot.hasData) {
+                        // Text(streamSnapshot.data!.docs[0]['şeker'].toString()),
+                        final querySnapshot = streamSnapshot.data;
+                        return Expanded(
+                          child: ListView.builder(
+                              shrinkWrap: true,
+                              physics: BouncingScrollPhysics(),
+                              itemCount: querySnapshot!.size,
+                              itemBuilder: (context, index) {
+                                final map = querySnapshot.docs[index];
+                                final Map<String, dynamic> mapp =
+                                    map.data() as Map<String, dynamic>;
 
-                              return buildProductCard(context, mapp);
-                            }),
+                                return buildProductCard(context, mapp);
+                              }),
+                        );
+                      }
+
+                      return Center(
+                        child: CircularProgressIndicator(),
                       );
-                    }
-
-                    return Center(
-                      child: CircularProgressIndicator(),
-                    );
-                  })),
-        ],
+                    })),
+          ],
+        ),
       ),
     );
   }
